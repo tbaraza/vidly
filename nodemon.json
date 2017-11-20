@@ -1,0 +1,7 @@
+{
+  "ignore": ["node_modules"],
+  "watch": ["server.js"],
+  "execMap": {
+    "js": "node -r babel-register server.js"
+  }
+}
