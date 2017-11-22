@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
 
-      // download and save cache
+      # download and save cache
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
