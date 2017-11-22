@@ -10,7 +10,7 @@ app.get('*', (req, res) => {
 
 app.listen(port, (err) => {
   if (err) {
-    console.log(err);
+    console.error(err);
   } else {
     console.info(`listening on port${port}`);
   }
