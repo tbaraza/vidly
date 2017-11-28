@@ -6,7 +6,9 @@
   "scripts": {
     "start": "NODE_ENV=production node -r babel-register server.js",
     "watch": "nodemon",
-    "migrate": "node_modules/.bin/sequelize db:migrate"
+    "migrate": "node_modules/.bin/sequelize db:migrate",
+    "test": "jest --watch",
+    "testOnce": "jest"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
@@ -23,6 +25,7 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1"
   }
 }
