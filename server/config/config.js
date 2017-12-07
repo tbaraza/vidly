@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const config = {
+module.exports = {
   development: {
     url: process.env.DEV_URL,
     dialect: 'postgres',
@@ -17,5 +17,3 @@ const config = {
     apiVersion: process.env.API_VERSION || 'v1',
   },
 };
-
-export default config;
